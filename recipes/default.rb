@@ -24,7 +24,7 @@ cookbook_file '/home/ubuntu/Job_watcher/requirements.txt' do
   action :create
 end
 execute 'pip3 install requirements' do
-  command 'pip3 install -r /home/ubuntu/Job_watcher/requirements.txt'
+  command 'pip3 install -r /home/ubuntu/App/requirements.txt'
   cwd 'home/ubuntu'
 end
 directory '/home/vagrant/Downloads' do
